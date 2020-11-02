@@ -1,0 +1,15 @@
+
+.background-wrap {
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: 768px;
+    padding-top: 50px;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #00b4ff;
+  }

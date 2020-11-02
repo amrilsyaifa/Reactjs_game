@@ -1,0 +1,16 @@
+.container-star-count{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image-star-count {
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+}
+
+.title-count {
+    color: white;
+    padding-left: 5px;
+}

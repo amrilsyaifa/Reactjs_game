@@ -1,0 +1,38 @@
+.battery-outline {
+  position: relative;
+  padding: 10px;
+  height: 30px;
+  width: 155px;
+  background-color: #FFF;
+  font-size: 1.6rem;
+  font-weight: 300;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 10px;
+}
+
+.battery-bar {
+  float: right;
+  margin-left: 5px;
+  width: 10px;
+  height: 100%;
+  background-color: #bbb;
+  border-radius: 5px;
+}
+
+.battery-bar:last-child {
+  margin-right: 0;
+}
+
+.battery-level-high .battery-bar {
+  background-color: #61CC67;
+}
+
+.battery-level-warning .battery-bar {
+  background-color: #e7e405;
+}
+
+.battery-level-low .battery-bar {
+  background-color: #F25C70;
+}

@@ -1,0 +1,7 @@
+.image-plane {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    z-index: 3;
+}
+  

@@ -1,38 +1,159 @@
-.App {
+.game-area {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  border: 2px solid #000000;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.title-container {
+  position: absolute;
+  width: 100%;
+}
+
+.title {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
+.home-page {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-form{
+  width:100%;
+  max-width:700px;
+  margin:0 auto;
+  box-sizing:border-box;
+}
+
+.datainput{
+  position:relative;
+  margin:5px 0 20px
+}
+.datainput p{
+    font-size:12px;
+    background:#eee;
+    display:inline-block;
+    padding:5px 15px;
+    border-radius:.5rem
+}
+.whatsapp-form textarea{
+  min-height:120px
+}
+.datainput select{
+  padding:12px 0;
+  color:#555;
+  font-size:14px;
+  width:100%;
+  border:0;
+  border-bottom:1px solid #ddd;
+  outline:none;background:#fff
+}
+.datainput input{
+  font-size:15px;
+  padding:15px 0;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #ddd
+}
+.datainput input:focus{
+  outline:none
+}
+.datainput label{
+  color:#999;
+  font-size:14px;
+  font-weight:400;
+  position:absolute;
+  pointer-events:none;
+  left:0;
+  top:18px;
+  transition:.2s ease all
+}
+.datainput input:focus~label,.datainput input:valid~label{
+  top:-10px;
+  font-size:14px;
+  color:#21a51f
+}
+.bar{
+  position:relative;
+  display:block;
+  width:100%
+}
+.bar:before,.bar:after{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#21a51f;
+  transition:.2s ease all
+}
+.bar:before{
+  left:50%
+}
+.bar:after{
+  right:50%
+}
+.datainput input:focus~.bar:before,.datainput input:focus~.bar:after{
+  width:50%
+}
+.highlight{
+  position:absolute;
+  height:50%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:.5
+}
+.datainput input:focus~.highlight{
+  animation:inputHighlighter .3s ease
+}
+.datainput input:focus~label,.datainput input:valid~label{
+  top:-10px;
+  font-size:13px;
+  color:#21a51f
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-green{
+  color:#21a51f
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
